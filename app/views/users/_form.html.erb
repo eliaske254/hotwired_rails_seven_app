@@ -33,7 +33,7 @@
 
     <div class="form-group">
       <%= form.label :country, class: "form-label mb-2 mt-3" %>
-      <%= form.text_field :country, class: "form-control form-control-lg" %>
+      <%= form.country_select :country, {prompt: 'select country'}, class: "form-select form-select-lg", data: { controller: "countries" } %>
     </div>
 
     <div class="form-group">

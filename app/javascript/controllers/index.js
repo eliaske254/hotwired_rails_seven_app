@@ -7,6 +7,9 @@ import { application } from "./application"
 import BsModalController from "./bs_modal_controller"
 application.register("bs-modal", BsModalController)
 
+import CountriesController from "./countries_controller"
+application.register("countries", CountriesController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
