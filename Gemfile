@@ -75,3 +75,5 @@ group :test do
 end
 
 gem "country_select", "~> 8.0"
+
+gem "pry", "~> 0.14.1"
