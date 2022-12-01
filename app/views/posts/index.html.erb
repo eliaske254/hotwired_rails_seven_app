@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>User</th>
+    <th>Votes</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+  </tbody>
+</table>
+<%= link_to "New post", new_post_path %>
+
+<%#= link_to "New user", new_user_path, data: { controller: 'user-modal' } %>

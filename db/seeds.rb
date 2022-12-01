@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require 'json'
+require 'rest-client'
+require 'open-uri'
+
+url = 'https://hacker-news.firebaseio.com/v0/topstories.json'
+post_ids = open(url).read
+p post_ids
